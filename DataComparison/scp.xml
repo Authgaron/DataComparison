@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Result GroupBy="by action">
+	<Group Value="Add">
+		<Entry Update="Add" Name="Table" Type="TopLevelElement">
+			<Source>dbo.test</Source>
+			<Target />
+			<OrderChanged>False</OrderChanged>
+			<Ordinal>0</Ordinal>
+			<ContainsOrderChanged>False</ContainsOrderChanged>
+			<SiblingOrderChanged>False</SiblingOrderChanged>
+			<Refactored>False</Refactored>
+			<ChildRefactored>False</ChildRefactored>
+			<InclusionState>Included</InclusionState>
+			<Children>
+				<Entry Update="Add" Name="Columns" Type="Folder">
+					<Source />
+					<Target />
+					<OrderChanged>False</OrderChanged>
+					<Ordinal>2147483647</Ordinal>
+					<ContainsOrderChanged>False</ContainsOrderChanged>
+					<SiblingOrderChanged>False</SiblingOrderChanged>
+					<Refactored>False</Refactored>
+					<ChildRefactored>False</ChildRefactored>
+					<InclusionState>None</InclusionState>
+					<Children>
+						<Entry Update="Add" Name="Column" Type="Element">
+							<Source>dbo.test.id</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>0</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+							<Children>
+								<Entry Update="Add" Name="Properties" Type="Folder">
+									<Source />
+									<Target />
+									<OrderChanged>False</OrderChanged>
+									<Ordinal>2147483647</Ordinal>
+									<ContainsOrderChanged>False</ContainsOrderChanged>
+									<SiblingOrderChanged>False</SiblingOrderChanged>
+									<Refactored>False</Refactored>
+									<ChildRefactored>False</ChildRefactored>
+									<InclusionState>None</InclusionState>
+									<Children>
+										<Entry Update="Add" Name="Collation" Type="Property">
+											<Source>null</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="EncryptionAlgorithmName" Type="Property">
+											<Source>null</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="EncryptionType" Type="Property">
+											<Source>0</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="GeneratedAlwaysType" Type="Property">
+											<Source>0</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="IdentityIncrement" Type="Property">
+											<Source>1</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="IdentityIsNotForReplication" Type="Property">
+											<Source>False</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="IdentitySeed" Type="Property">
+											<Source>1</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="IsFileStream" Type="Property">
+											<Source>False</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="IsHidden" Type="Property">
+											<Source>False</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="IsIdentity" Type="Property">
+											<Source>False</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="IsMax" Type="Property">
+											<Source>False</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="IsNullable" Type="Property">
+											<Source>True</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="IsRowGuidColumn" Type="Property">
+											<Source>False</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="IsSparse" Type="Property">
+											<Source>False</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="Length" Type="Property">
+											<Source>0</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="MaskingFunction" Type="Property">
+											<Source>null</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="Precision" Type="Property">
+											<Source>0</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="Scale" Type="Property">
+											<Source>0</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+										<Entry Update="Add" Name="Type" Type="Property">
+											<Source>int</Source>
+											<Target />
+											<OrderChanged>False</OrderChanged>
+											<Ordinal>2147483647</Ordinal>
+											<ContainsOrderChanged>False</ContainsOrderChanged>
+											<SiblingOrderChanged>False</SiblingOrderChanged>
+											<Refactored>False</Refactored>
+											<ChildRefactored>False</ChildRefactored>
+											<InclusionState>None</InclusionState>
+										</Entry>
+									</Children>
+								</Entry>
+							</Children>
+						</Entry>
+					</Children>
+				</Entry>
+				<Entry Update="Add" Name="Properties" Type="Folder">
+					<Source />
+					<Target />
+					<OrderChanged>False</OrderChanged>
+					<Ordinal>2147483647</Ordinal>
+					<ContainsOrderChanged>False</ContainsOrderChanged>
+					<SiblingOrderChanged>False</SiblingOrderChanged>
+					<Refactored>False</Refactored>
+					<ChildRefactored>False</ChildRefactored>
+					<InclusionState>None</InclusionState>
+					<Children>
+						<Entry Update="Add" Name="Durability" Type="Property">
+							<Source>0</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsAnsiNullsOn" Type="Property">
+							<Source>True</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsAutoGeneratedHistoryTable" Type="Property">
+							<Source>False</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsChangeDataCaptureOn" Type="Property">
+							<Source>False</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsChangeTrackingOn" Type="Property">
+							<Source>False</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsFileStreamNull" Type="Property">
+							<Source>null</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsLargeValueTypesOutOfRow" Type="Property">
+							<Source>False</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsMemoryOptimized" Type="Property">
+							<Source>False</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsQuotedIdentifierOn" Type="Property">
+							<Source>True</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsReplicated" Type="Property">
+							<Source>False</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsTableLockOnBulkLoad" Type="Property">
+							<Source>False</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsTrackColumnsUpdatedOn" Type="Property">
+							<Source>False</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="IsVardecimalStorageFormatOn" Type="Property">
+							<Source>False</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="LockEscalation" Type="Property">
+							<Source>0</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="RemoteDataEnabled" Type="Property">
+							<Source>False</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>Excluded</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="RetentionUnit" Type="Property">
+							<Source>-2</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="RetentionValue" Type="Property">
+							<Source>-1</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+						<Entry Update="Add" Name="TextInRowSize" Type="Property">
+							<Source>0</Source>
+							<Target />
+							<OrderChanged>False</OrderChanged>
+							<Ordinal>2147483647</Ordinal>
+							<ContainsOrderChanged>False</ContainsOrderChanged>
+							<SiblingOrderChanged>False</SiblingOrderChanged>
+							<Refactored>False</Refactored>
+							<ChildRefactored>False</ChildRefactored>
+							<InclusionState>None</InclusionState>
+						</Entry>
+					</Children>
+				</Entry>
+			</Children>
+		</Entry>
+	</Group>
+</Result>

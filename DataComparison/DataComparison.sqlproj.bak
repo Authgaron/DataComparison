@@ -59,30 +59,14 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="Comparisons" />
-    <Folder Include="Comparisons\Tables" />
-    <Folder Include="Comparisons\Stored Procedures" />
-    <Folder Include="Metadata" />
-    <Folder Include="Metadata\Tables" />
-    <Folder Include="Metadata\Stored Procedures" />
-    <Folder Include="Misc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataComparison.publish.xml" />
     <None Include="DataComparison_Develop.publish.xml" />
-    <None Include="DataComparison_Staging.publish.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="DataComparison_Staging.publish.xml" />
     <None Include="dev_compare.scmp" />
-    <None Include="DataComparison.dacpac">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
-  <ItemGroup>
-    <Build Include="Comparisons\Comparisons.sql" />
-    <Build Include="Metadata\Metadata.sql" />
-    <Build Include="Comparisons\Tables\SalesOrderDetail_Update.sql" />
-    <Build Include="Comparisons\Tables\SalesOrderDetail.sql" />
-    <Build Include="Metadata\Stored Procedures\ColumnComparison.sql" />
-  </ItemGroup>
+  <PropertyGroup>
+    <PreBuildEvent>msbuild /t:SqlSchemaCompare /p:SqlScmpFilePath="dev_compare.scmp" /p:XmlOutput="scp.xml" /p:Deploy="true"</PreBuildEvent>
+  </PropertyGroup>
 </Project>
