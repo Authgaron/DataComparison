@@ -7,10 +7,10 @@
     </ConnectionBasedModelProvider>
   </SourceModelProvider>
   <TargetModelProvider>
-    <ProjectBasedModelProvider>
-      <ProjectGuid>{391376ae-a4d0-4266-b43e-7cfb86cb9b55}</ProjectGuid>
-      <Name>DataComparison</Name>
-    </ProjectBasedModelProvider>
+    <FileBasedModelProvider>
+      <Name></Name>
+      <DatabaseFileName>F:\Development\DataComparison\DataComparison\DataComparison.dacpac</DatabaseFileName>
+    </FileBasedModelProvider>
   </TargetModelProvider>
   <SchemaCompareSettingsService>
     <SchemaCompareSettingsService>
@@ -239,6 +239,10 @@
       <PropertyElementName>
         <Name>IgnoreFileSize</Name>
         <Value>True</Value>
+      </PropertyElementName>
+      <PropertyElementName>
+        <Name>AllowUnsafeRowLevelSecurityDataMovement</Name>
+        <Value>False</Value>
       </PropertyElementName>
       <PropertyElementName>
         <Name>IncludeCompositeObjects</Name>
