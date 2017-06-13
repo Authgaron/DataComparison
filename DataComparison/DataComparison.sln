@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DataComparison", "DataComparison.sqlproj", "{391376AE-A4D0-4266-B43E-7CFB86CB9B55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparisonTesting", "..\ComparisonTesting\ComparisonTesting.csproj", "{032105E9-DA1A-4A71-8069-4546AD68E89A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{391376AE-A4D0-4266-B43E-7CFB86CB9B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{391376AE-A4D0-4266-B43E-7CFB86CB9B55}.Release|Any CPU.Build.0 = Release|Any CPU
 		{391376AE-A4D0-4266-B43E-7CFB86CB9B55}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{032105E9-DA1A-4A71-8069-4546AD68E89A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{032105E9-DA1A-4A71-8069-4546AD68E89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{032105E9-DA1A-4A71-8069-4546AD68E89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{032105E9-DA1A-4A71-8069-4546AD68E89A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

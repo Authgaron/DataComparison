@@ -85,4 +85,13 @@
     <Build Include="Comparisons\Tables\SalesOrderDetail.sql" />
     <Build Include="Metadata\Stored Procedures\ColumnComparison.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Metadata\LevenshteinDistance.cs" />
+  </ItemGroup>
 </Project>

@@ -4,44 +4,74 @@
 --AS
 --BEGIN
 
-DECLARE @table_a varchar(255);
-SET @table_a = 'SalesOrderDetail'; 
-DECLARE @table_b varchar(255);
-SET @table_b = 'SalesOrderDetail_Update'; 
 
-	IF OBJECT_ID('tempdb..#a', 'U') IS NOT NULL
-		DROP TABLE #a
-	IF OBJECT_ID('tempdb..#b', 'U') IS NOT NULL
-		DROP TABLE #b
+DECLARE
+  @table_a VARCHAR(255);
 
-	SELECT * 
-	INTO #a
-	FROM INFORMATION_SCHEMA.COLUMNS
-	WHERE TABLE_NAME = @table_a
+SET @table_a='SalesOrderDetail';
 
-	SELECT * 
-	INTO #b
-	FROM INFORMATION_SCHEMA.COLUMNS
-	WHERE TABLE_NAME = @table_b
+DECLARE
+  @table_b VARCHAR(255);
 
-	SELECT #a.COLUMN_NAME AS COLUMNS_A, #b.COLUMN_NAME AS COLUMNS_B,
-		#a.ORDINAL_POSITION AS ORDINAL_A,#b.ORDINAL_POSITION AS ORDINAL_B,
-		#a.DATA_TYPE AS TYPE_A, #b.DATA_TYPE AS TYPE_B,
-		CASE WHEN #a.COLUMN_NAME = #b.COLUMN_NAME THEN 1 
-			 ELSE 0 
-		END AS Name_Match,
-		CASE WHEN #a.ORDINAL_POSITION = #b.ORDINAL_POSITION THEN 1 
-			 ELSE 0 
-		END AS Ordinal_Match,
-		CASE WHEN #a.DATA_TYPE = #b.DATA_TYPE THEN 1 
-			 ELSE 0 
-		END AS Type_Match
-	--INTO Metadata.ColumnOrdinalMatch
-	FROM 
-	#a FULL OUTER JOIN #b
-	ON #a.COLUMN_NAME = #b.COLUMN_NAME
-	OR (#a.COLUMN_NAME <> #b.COLUMN_NAME AND #a.ORDINAL_POSITION = #b.ORDINAL_POSITION)
-	ORDER BY Name_Match DESC, Ordinal_Match DESC, Type_Match DESC
+SET @table_b='SalesOrderDetail_Update';
+
+IF OBJECT_ID('tempdb..#a', 'U') IS NOT NULL
+BEGIN
+DROP TABLE #a;
+END;
+
+IF OBJECT_ID('tempdb..#b', 'U') IS NOT NULL
+BEGIN
+DROP TABLE #b;
+END;
+
+SELECT *
+INTO #a
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME=@table_a;
+
+SELECT *
+INTO #b
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME=@table_b;
+
+SELECT Base.COLUMN_NAME AS ColumnName,
+       Base.ORDINAL_POSITION AS OrdinalPosition,
+       Base.DATA_TYPE AS DataType,
+       OrdinalCheck.COLUMN_NAME AS OrdinalEquivalent,
+	  LevenshteinCheck.COLUMN_NAME AS ClosestLevenshteinMatch,
+	  LevenshteinCheck.Distance AS LevenshteinDistance,
+       CASE WHEN Base.COLUMN_NAME=NameCheck.COLUMN_NAME
+         THEN 1 ELSE 0 END AS NameMatch,
+       CASE WHEN Base.ORDINAL_POSITION=NameCheck.ORDINAL_POSITION
+         THEN 1 ELSE 0 END AS OrdinalMatch,
+       CASE WHEN Base.DATA_TYPE=NameCheck.DATA_TYPE
+         THEN 1 ELSE 0 END AS TypeMatch,
+	  CASE WHEN LevenshteinCheck.Distance = 0
+         THEN 1 ELSE 0 END AS LevenshteinMatch
+FROM #a
+AS Base
+FULL OUTER JOIN
+#b
+AS NameCheck
+ON Base.COLUMN_NAME=NameCheck.COLUMN_NAME
+   OR Base.COLUMN_NAME IS NULL
+   OR NameCheck.COLUMN_NAME IS NULL
+    LEFT OUTER JOIN
+    #b
+AS OrdinalCheck
+    ON Base.ORDINAL_POSITION=OrdinalCheck.ORDINAL_POSITION
+        CROSS APPLY
+(
+  SELECT TOP 1 dbo.LevenshteinDistance
+  (Base.COLUMN_NAME, Compare.COLUMN_NAME, 0)
+  AS Distance,
+               Compare.COLUMN_NAME
+  FROM #b
+  AS Compare
+  ORDER BY Distance
+)
+AS LevenshteinCheck
 
 
 --END
